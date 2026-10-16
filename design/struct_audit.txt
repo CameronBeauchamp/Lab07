@@ -1,0 +1,6 @@
+Item | Decision | Why
+DAYS | Leave as is | Collection of day labels that will be used to build Reading structs.
+highs | Leave as is | Collection of temperatures that will be used to build Reading structs.
+DAYS[i] paired with highs[i] | Convert to a struct or collection | The label and temperature belong together as one Reading.
+value returned by hottest_day | Leave as is | It is still an index used to locate a reading.
+threshold 75 | Leave as is | It is a single parameter, not grouped data.
